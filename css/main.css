@@ -1,3 +1,614 @@
+* {
+  box-sizing: border-box;
+}
 
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat";
+}
+
+body p {
+  font-family: "Mulish", sans-serif;
+  font-weight: normal;
+}
+
+.bluetext {
+  color: #001A49;
+}
+
+.greytext {
+  color: #001A49;
+}
+
+/* Header */
+.df {
+  display: flex;
+  align-items: center;
+}
+
+.jcc {
+  justify-content: center;
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10%;
+  font-weight: bold;
+  font-style: 16px;
+}
+
+.logo {
+  margin-right: 55px;
+}
+
+header ul {
+  list-style-type: none;
+  display: flex;
+  gap: 50px;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #001A49;
+  text-decoration: none;
+}
+
+.btn {
+  padding: 15px 30px;
+  color: #001A49;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 33px;
+  font-weight: bold;
+  font-style: 16px;
+  display: inline-block;
+}
+
+.bwhite {
+  background: linear-gradient(44.11deg, #CD10FF 15.75%, #9F06FF 84.63%);
+  color: #001A49;
+  color: #ffffff;
+}
+
+/* Welcoming */
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+#welcoming .container {
+  position: relative;
+  overflow: hidden;
+}
+
+.left {
+  padding-top: 134px;
+  padding-left: 160px;
+  padding-right: 370px;
+  padding-bottom: 94px;
+  width: 71%;
+  background-color: #FBF3FF;
+  border-radius: 0px 20px 20px 0px;
+}
+
+#welcoming .left h1 {
+  font-size: 60px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+#welcoming .left > p {
+  font-size: 20px;
+  color: #4F596A;
+  margin-bottom: 60px;
+}
+
+#welcoming .left .btn {
+  padding: 21px 48px;
+  margin-bottom: 100px;
+}
+
+#welcoming .left .profilePhotos {
+  align-items: center;
+  position: relative;
+}
+
+#welcoming .left .profilePhotos span {
+  color: #CD10FF;
+}
+
+.image2 {
+  left: 100px;
+}
+
+#welcoming .right .video {
+  width: 40%;
+  height: 360px;
+  position: absolute;
+  right: -20px;
+  top: 170px;
+  background: #001A49;
+  box-shadow: 0px 32px 44px #818A8C;
+  border-radius: 20px 0px 0px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 1s;
+}
+
+i {
+  font-size: 70px;
+  color: white;
+}
+
+/* Hypersection is used to make overflow hidden sumultaniously on three sections */
+#hypersection {
+  overflow: hidden;
+}
+
+/* inNumbers */
+#inNumbers {
+  width: 100%;
+  position: relative;
+}
+
+#inNumbers .container {
+  width: 100%;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+#inNumbers .lcirclebig {
+  width: 338px;
+  height: 338px;
+  background: linear-gradient(44.11deg, #CD10FF 15.75%, #9F06FF 84.63%);
+  border-radius: 50%;
+  position: absolute;
+  top: 225px;
+  left: -53px;
+  z-index: -1;
+  transition: 1s;
+}
+
+#inNumbers .rcirclebig {
+  width: 435px;
+  height: 435px;
+  background: linear-gradient(44.11deg, #CD10FF 15.75%, #9F06FF 84.63%);
+  border-radius: 50%;
+  position: absolute;
+  top: 376px;
+  right: -282px;
+  z-index: -1;
+  transition: 1s;
+}
+
+#inNumbers .lcirclesmall {
+  width: 86px;
+  height: 86px;
+  background: linear-gradient(35.71deg, #FFD7A9 9.11%, #FFAE70 71.64%);
+  border-radius: 50%;
+  position: absolute;
+  top: 477px;
+  left: 156px;
+  transition: 1s;
+}
+
+.num {
+  margin-top: 100px;
+  width: 75%;
+  border: 1px solid #E7EAEB;
+  border-radius: 21px;
+  display: flex;
+  align-items: center;
+  padding: 30px 0;
+  background-color: #ffffff;
+  transition: 3s;
+}
+
+.oneOfThird {
+  width: 33%;
+  padding: 20px 125px;
+}
+
+.oneOfThird:nth-child(2) {
+  border-right: 2px solid #E7EAEB;
+  border-left: 2px solid #E7EAEB;
+}
+
+#inNumbers h1 {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+
+#inNumbers p {
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 0;
+  color: #4F596A;
+}
+
+/* Study plan */
+#studyPlan {
+  width: 100%;
+}
+
+#studyPlan .container {
+  padding: 50px 10%;
+  text-align: center;
+}
+
+#studyPlan .container h2 {
+  font-weight: bold;
+  font-size: 46px;
+  margin: 10px;
+}
+
+#studyPlan .container p {
+  margin: 20px auto 60px;
+  font-size: 20px;
+  color: #4F596A;
+  max-width: 560px;
+}
+
+#studyPlan .cards {
+  margin-top: 30px;
+}
+
+#studyPlan .card {
+  position: relative;
+  background-color: #FBF3FF;
+  border-radius: 21px;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  margin: 30px auto;
+  padding-left: 130px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  transition: 1.5s;
+}
+
+#studyPlan .text {
+  padding: 0;
+  margin: 0;
+  height: 120px;
+}
+
+#studyPlan .icon {
+  position: absolute;
+  padding: 15px 12px;
+  border-radius: 50px;
+  background-color: white;
+  top: 54px;
+  left: 46px;
+}
+
+#studyPlan .card h1 {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+}
+
+#studyPlan .card p {
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+#studyPlan .inform {
+  width: 278px;
+  display: flex;
+  padding: 23px 38px;
+  background: linear-gradient(44.11deg, #CD10FF 15.75%, #9F06FF 84.63%);
+  border-radius: 33px;
+  margin-left: 157px;
+}
+
+.half {
+  width: 50%;
+}
+
+.half:first-child {
+  border-right: 2px solid #8639B5;
+  padding-right: 20px;
+}
+
+.half:last-child {
+  margin-left: 20px;
+}
+
+/* Course Instructor */
+#courseInstructor .container {
+  padding: 130px 10%;
+  text-align: left;
+  position: relative;
+}
+
+.cleft {
+  width: 60%;
+  max-width: 560px;
+}
+
+#courseInstructor .container h2 {
+  font-weight: bold;
+  font-size: 46px;
+}
+
+#courseInstructor .container p {
+  font-size: 20px;
+  color: #4F596A;
+  max-width: 560px;
+}
+
+.cright {
+  position: absolute;
+  right: 192px;
+  bottom: 100px;
+}
+
+.photo {
+  height: 354px;
+  width: 354px;
+  border-radius: 50%;
+  background: linear-gradient(44.11deg, #CD10FF 15.75%, #9F06FF 84.63%);
+  overflow: hidden;
+  position: relative;
+}
+
+.photo img {
+  position: absolute;
+  bottom: -10px;
+}
+
+#courseInstructor .circlesmall {
+  width: 88px;
+  height: 88px;
+  background: linear-gradient(35.71deg, #FFD7A9 9.11%, #FFAE70 71.64%);
+  border-radius: 50%;
+  position: absolute;
+  top: -11px;
+  left: -25px;
+  z-index: -1;
+  transition: 1s;
+}
+
+.circlemid {
+  height: 132px;
+  width: 132px;
+  background: linear-gradient(35.71deg, #FFD7A9 9.11%, #FFAE70 71.64%);
+  mix-blend-mode: normal;
+  opacity: 0.3;
+  position: absolute;
+  right: -40px;
+  bottom: -17px;
+  border-radius: 50%;
+  z-index: -1;
+  transition: 1s;
+}
+
+/* Feedback section */
+#feedback {
+  width: 100%;
+}
+
+#feedback .container {
+  padding: 120px 160px;
+  background: linear-gradient(44.11deg, #CD10FF 15.75%, #9F06FF 84.63%);
+  color: white;
+}
+
+#feedback .container .top {
+  text-align: center;
+}
+
+#feedback .container h2 {
+  font-weight: bold;
+  font-size: 46px;
+  margin-bottom: 20px;
+}
+
+#feedback .container .top p {
+  color: #ffffff;
+  font-size: 20px;
+  max-width: 560px;
+  font-weight: 400;
+  text-align: center;
+  margin: 10px auto;
+  margin-bottom: 100px;
+}
+
+#feedback .bottom .fcards {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  gap: 30px;
+  position: relative;
+}
+
+#feedback .fcard {
+  background-color: #4C007032;
+  border-radius: 20px;
+  padding: 50px 40px 40px 50px;
+  min-width: 470px;
+  transition: 1.5s;
+}
+
+#feedback .fuser {
+  padding: 5px 0 0;
+  display: flex;
+}
+
+#feedback .fuser .userimage {
+  width: 60px;
+  height: 60px;
+}
+
+#feedback .fuser .userName {
+  padding: 8px 14px;
+}
+
+#feedback .fuser .userName h4 {
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+
+#feedback .fuser .userName p {
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
+/* frequently asked questions */
+#frequentQuestions {
+  width: 100%;
+}
+
+#frequentQuestions .container {
+  width: 100%;
+  padding: 150px 20% 60px;
+}
+
+#frequentQuestions .container .questionCard {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: white;
+  border-radius: 21px;
+  border: 1px solid #8639b53b;
+  padding: 40px;
+  margin-bottom: 20px;
+}
+
+#frequentQuestions .container h2 {
+  margin: 0 auto 60px;
+  text-align: center;
+  font-size: 46px;
+}
+
+#frequentQuestions .container p {
+  max-width: 667px;
+  color: #4F596A;
+  font-size: 16px;
+}
+
+#frequentQuestions .container .icon {
+  background: linear-gradient(35.71deg, #FFD7A9 9.11%, #FFAE70 71.64%);
+  mix-blend-mode: normal;
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#frequentQuestions .container i {
+  color: #001A49;
+  font-size: 15px;
+}
+
+/* Offer */
+#offer .container {
+  padding: 60px 120px 120px;
+  text-align: center;
+}
+
+#offer .container h5 {
+  font-size: 12px;
+  padding: 8px 35px;
+  background-color: #FEEFE2;
+  display: inline;
+  border-radius: 33px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+#offer .container h2 {
+  margin: 50px auto;
+  font-weight: bold;
+  font-size: 46px;
+  margin-bottom: 20px;
+  max-width: 650px;
+}
+
+/* Footer */
+#footer .container {
+  width: 100%;
+  padding: 60px 160px 80px;
+  background-color: #FBF2FF;
+}
+
+@keyframes forma {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 80%;
+  }
+}
+#footer .ftop .emailForm {
+  padding: 8px;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 33px;
+  background-color: white;
+  animation-name: forma;
+  animation-duration: 3s;
+}
+
+#footer .ftop .emailForm input {
+  border: none;
+  width: 83%;
+  outline: none;
+  padding: 15px 32px;
+}
+
+#footer .ftop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#footer .ftop .emailForm .subscribe {
+  padding: 15px 30px;
+  color: white;
+  background: linear-gradient(44.11deg, #CD10FF 15.75%, #9F06FF 84.63%);
+  border-radius: 33px;
+  border: none;
+}
+
+#footer .fbottom {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px;
+}
+
+#footer .fbottom .col {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+#footer .fbottom ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#footer .fbottom ul li {
+  padding: 10px 0;
+}
 
 /*# sourceMappingURL=main.css.map */
